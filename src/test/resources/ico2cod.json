@@ -1,0 +1,64 @@
+{
+   "$id": "http://services.groupkt.com/country/get/iso2code/US",
+   "type": "object",
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-06/schema#",
+   "properties": {
+      "RestResponse": {
+         "$id": "/properties/RestResponse",
+         "type": "object",
+         "properties": {
+            "messages": {
+               "$id": "/properties/RestResponse/properties/messages",
+               "type": "array",
+               "items": {
+                  "$id": "/properties/RestResponse/properties/messages/items",
+                  "type": "string",
+                  "title": "The 0 Schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "",
+                  "examples": [
+                     "Country found matching code [US]."
+                  ]
+               }
+            },
+            "result": {
+               "$id": "/properties/RestResponse/properties/result",
+               "type": "object",
+               "properties": {
+                  "name": {
+                     "$id": "/properties/RestResponse/properties/result/properties/name",
+                     "type": "string",
+                     "title": "The Name Schema",
+                     "description": "An explanation about the purpose of this instance.",
+                     "default": "",
+                     "examples": [
+                        "United States of America"
+                     ]
+                  },
+                  "alpha2_code": {
+                     "$id": "/properties/RestResponse/properties/result/properties/alpha2_code",
+                     "type": "string",
+                     "title": "The Alpha2_code Schema",
+                     "description": "An explanation about the purpose of this instance.",
+                     "default": "",
+                     "examples": [
+                        "US"
+                     ]
+                  },
+                  "alpha3_code": {
+                     "$id": "/properties/RestResponse/properties/result/properties/alpha3_code",
+                     "type": "string",
+                     "title": "The Alpha3_code Schema",
+                     "description": "An explanation about the purpose of this instance.",
+                     "default": "",
+                     "examples": [
+                        "USA"
+                     ]
+                  }
+               }
+            }
+         }
+      }
+   }
+}
